@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.btnAdd {
+    padding:1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: white;
+}
+
+.btnAdd:hover {
+    background-color: rgb(230, 229, 229);
+}
+
+.modal {
+    border: none;
+    border-radius: .5rem;
+    box-shadow: var(--shadow);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+form h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btnModal {
+    border: none;
+    border-radius: .5rem;
+    padding: .8rem 2rem;
+    cursor: pointer;
+    background-color: lightgreen;
+}
+
+input[type=text],
+input[type=number] {
+    padding: .3rem;
+    border: 1px solid #ccc;
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+}
+
+.check {
+    margin-bottom: 1rem;
+}
+
+input[type=checkbox]{
+    margin-left: 1rem;
+}
+
+.books{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding: 1rem;
+    flex-grow: 1;
+    border-radius: 1rem;
+    gap: .5rem;
+    max-width: calc(25% - 1rem);
+    flex: 1 1 calc(25% - 1rem);
+    box-shadow: var(--shadow);
+}
+
+.card > * {
+    padding: .7rem;
+}
+
+.btnCard {
+    border: none;
+    font-size: inherit;
+    background-color: white;
+    width: 100%;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.remove:hover {
+    background-color: lightgrey;
+}
+
+.read {
+    background-color: lightgreen;
+}
+
+.notRead {
+    background-color: rgb(247, 81, 81);
+}
